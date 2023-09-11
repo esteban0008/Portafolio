@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  background-image: radial-gradient(#4f4f4f 0.05px , #0e0e0e 0.05px);
+  background-size: 21px 21px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  height: 70px;
+  width: 70%;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: #777;
+  text-transform: capitalize;
+}
+
+.message{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.message-icon-container{
+  width: 60px;
+  height: 60px;
+  background: #0e0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#message-i{
+  font-size: 18px;
+}
+
+#message:hover .message p{
+  color: #f2f2f2;
+}
+
+@media screen and (max-width:1025px) {
+  .card{
+    width: calc(95% / 2);
+  }
+ 
+  .section h3{
+    padding: 2rem 3rem;
+
+     }
+
+     .text{
+      padding: 3rem 2rem;
+     }
+}
